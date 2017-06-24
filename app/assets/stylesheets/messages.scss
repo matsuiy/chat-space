@@ -1,6 +1,12 @@
 .wrapper {
- -// They will automatically be included in application.css.     +  position: relative;
- -// You can use Sass (SCSS) here: http://sass-lang.com/     +}
+
+
+.pop-up {
+   text-align: center;
+   background-color: #38AEF0;
+   color: white;
+   display: none;
+ 
  
   .content-left {
     background-color: #2f3e51;
@@ -8,6 +14,7 @@
     height: 100vh;
     color: #FFFFFF;
     float: left;
+  　position: relative;
   }
   
   .user-name {
@@ -17,7 +24,23 @@
     font-size: 16px;
   }
   
-  .groups {
+  fa {
+   position: absolute;
+ 
+   &-edit{
+     left: 250px;
+     top: 40px;
+   }
+   &-cog {
+     left: 270px;
+     top: 40px;
+   }
+   &-file-image-o {
+     line-height: 50px;
+     right: 10px;
+   }
+ 
+ }.groups {
     padding: 20px 20px 40px 20px;
     &__name {
       font-size: 15px;
@@ -50,15 +73,15 @@
     }
     &__member {
       font-size: 12px;
-      color: #999999;
+      color: $light-gray;
   
     }
     &__btn {
       display: inline-block;
       padding: 0 20px;
       border: solid;
-      border-color: #38AEF0;
-      color: #38AEF0;
+      border-color: $blue;
+      color: $blue
       text-align: center;
       line-height: 40px;
       position: absolute;
@@ -77,7 +100,7 @@
     &__user {
       font-weight: bold;
       font-size: 16px;
-      color: #434A54;
+      color: $deep-blue;
       float: left;
       padding-right: 10px;
       line-height: 16px;
@@ -93,6 +116,7 @@
       clear: both;
       padding-top: 10px;
       font-size: 14px;
+      color: $deep-blue;
    }
  }
  
@@ -107,21 +131,25 @@
  .submit {
    background-color: white;
    position: relative;
+   width: calc(100vw - 500px);
    &__content {
+     display: inline-block;
      line-height: 50px;
      padding-left: 10px;
      font-size: 16px;
-     color: #999999;
+     color: $light-gray;
    }
+  }
+  .bottom-btn {
    &__btn {
      position: absolute;
      display: inline-block;
      padding: 0 20px;
-     background-color: #38AEF0;
+     background-color: $blue;
      color: white;
      text-align: center;
      line-height: 50px;
-     right: 0px;
-     bottom: 0px;
+     right: 40px;
+     bottom: 25px;
    }
  }
