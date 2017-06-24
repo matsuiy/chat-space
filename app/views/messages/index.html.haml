@@ -1,0 +1,27 @@
+%div
+   %p{class: "pop-up"} チャットグループが作成されました!
+      
+
+   / 左側
+   %div{class: "content-left"}
+     %div{class: "user-name"}
+       %p ログインユーザー名
+       %i{class: "fa fa-edit"}
+       %i{class: "fa fa-cog"}
+          = render 'groups'
+
+   %div{class: "content-right"}
+     %div{class: "group"}
+       %h2{class: "group__name"} グループ名
+       %p{class: "group__member"} MEMBER: メンバー名
+ 
+     %div{class: "btn__edit"}
+       %p edit
+       = render 'groups' 
+
+ 
+     %div{class: "submit"}
+       %p{class: "submit__content"} 送信内容
+       %p{class: "submit__button"} Send
+       %i{class: "fa fa-file-image-o"}
+       %p{class: "bottom-btn"} Send
