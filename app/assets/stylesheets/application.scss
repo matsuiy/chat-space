@@ -1,8 +1,8 @@
 @import "./reset";
 @import "font-awesome";
 @import "./config/variable";
+@import "./mixin/*";
 @import "./modules/*";
-@import "messages";
 
 left-contents{
  top-contents
