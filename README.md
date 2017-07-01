@@ -17,7 +17,7 @@
  
  | Column | type | Option |
  |:--|:--|:--|
- | name | string | index: true, null: false, unipue: true |
+ | name | string | index: true, null: false, unique: true |
  
  **Association**
  * has_many :users, through: :group_users

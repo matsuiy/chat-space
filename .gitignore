@@ -16,8 +16,4 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-app/assets/stylesheets/info.scss
-
-app/views/user-materials/
-
-group-materials/
+assets/images
