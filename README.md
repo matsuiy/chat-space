@@ -6,7 +6,6 @@
  | Column | type   | Option |
  |:--|:--|:---|
  | name   | string | index: true, null: false, unique: true |
- | mail   | string | null: false, unipue: true              |
  
   **Association**
   has_many :groups, through: :group_users
@@ -30,10 +29,10 @@
  
  | Column   | type    | Option |
  |:--|:--|:--|
- | body     | text    | null: false |
+ | body     | text    |  |
  | image    | string  |  |
- | group_id | integer | foreign_key: true |
- | user_id  | integer | foreign_key: true |
+ | group_id | integer | foreign_key: true |null: false |
+ | user_id  | integer | foreign_key: true |null: false |
  
  **Association**
  * belongs_to :user
@@ -44,8 +43,8 @@
  
  | Column    | type    | Option |
  |:--|:--|:--|
- | group_id  | integer | index: true, foreign_key: true, null: false |
- | user_id   | integer | index: true, foreign_key: true, null: false |
+ | group_id  | integer | foreign_key: true, null: false |
+ | user_id   | integer | foreign_key: true, null: false |
  
  **Association**
  * belongs_to :group
